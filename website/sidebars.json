@@ -26,7 +26,7 @@
     "Widgets & Plugins": [
       "Integrations-WidgetsPluginsOverview",
       "Integrations-KyberWidgetGuide",
-      "Integrations-SignInWidgetGuide", 
+      "Integrations-SignInWidgetGuide",
       "Integrations-WooCommercePluginGuide",
       "Integrations-WidgetGenerator"
     ],
@@ -45,12 +45,12 @@
       "Reserves-FedPriceReserve",
       "Reserves-AutomatedPriceReserve",
       "Reserves-OrderbookReserve",
-      "Reserves-Ganache",
-      "Reserves-ListingProcess"
+      "Reserves-Ganache"
     ],
     "Miscellaneous": [
       "Reserves-TradingStrategy",
-      "Reserves-SanityRates"
+      "Reserves-SanityRates",
+      "Reserves-ReserveFees"
     ]
   },
   "Environments": {
@@ -62,52 +62,54 @@
       "Environments-Ropsten",
       "Environments-Rinkeby",
       "Environments-Kovan"
-    ],
-    "Contract ABIs": [
-      "Environments-ABI"
     ]
   },
   "References": {
     "Getting Started": [
-      "References-Intro"
+      "API_ABI-Intro"
     ],
-    "Smart Contracts": [
-      "References-KyberNetwork",
-      "References-KyberNetworkInterface",
-      "References-KyberNetworkProxy",
-      "References-KyberNetworkProxyInterface",
-      "References-KyberReserve",
-      "References-KyberReserveInterface",
-      "References-ConversionRates",
-      "References-ConversionRatesInterface",
-      "References-FeeBurner",
-      "References-FeeBurnerInterface",
-      "References-LiquidityConversionRates",
-      "References-OrderbookReserve",
-      "References-OrderbookReserveInterface",
-      "References-PermissionlessOrderbookReserveLister",
-      "References-PermissionGroups",
-      "References-SanityRates",
-      "References-SanityRatesInterface",
-      "References-SimpleNetworkInterface",
-      "References-Withdrawable"
+    "Core Smart Contracts": [
+      "API_ABI-KyberNetworkProxy",
+      "API_ABI-KyberNetworkProxyInterface",
+      "API_ABI-KyberReserve",
+      "API_ABI-KyberReserveInterface",
+      "API_ABI-ConversionRates",
+      "API_ABI-FeeBurner",
+      "API_ABI-LiquidityConversionRates",
+      "API_ABI-OrderbookReserve",
+      "API_ABI-PermissionlessOrderbookReserveLister"
     ],
     "RESTful API": [
-      "References-RESTfulAPIOverview",
-      "References-RESTfulAPI"
+      "API_ABI-RESTfulAPIOverview",
+      "API_ABI-RESTfulAPI"
+    ],
+    "Contract ABIs": [
+      "API_ABI-ABI"
     ],
     "Widgets": [
-      "References-WidgetsOverview",
-      "References-KyberWidget",
-      "References-SignInWidget"
+      "API_ABI-WidgetsOverview",
+      "API_ABI-KyberWidget",
+      "API_ABI-SignInWidget"
     ],
     "Plugins": [
-      "References-PluginsOverview",
-      "References-WooCommercePlugin"
+      "API_ABI-PluginsOverview",
+      "API_ABI-WooCommercePlugin"
     ],
     "Code Snippets": [
-      "References-Web3",
-      "References-TokenQuantityConversion"
+      "API_ABI-Web3",
+      "API_ABI-TokenQuantityConversion"
+    ],
+    "Misc Contracts": [
+      "API_ABI-KyberNetwork",
+      "API_ABI-KyberNetworkInterface",
+      "API_ABI-ConversionRatesInterface",
+      "API_ABI-FeeBurnerInterface",
+      "API_ABI-OrderbookReserveInterface",
+      "API_ABI-PermissionGroups",
+      "API_ABI-SanityRates",
+      "API_ABI-SanityRatesInterface",
+      "API_ABI-SimpleNetworkInterface",
+      "API_ABI-Withdrawable"
     ]
   }
 }

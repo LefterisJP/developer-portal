@@ -2,6 +2,9 @@
 id: Integrations-KyberWidgetGuide
 title: KyberWidget Guide
 ---
+## DISCLAIMER
+**All code snippets in this guide have not been audited and should not be used in production. If so, it is done at your own risk.**
+
 ## Introduction
 This guide will walk you through on how you can interact with our protocol implementation using our KyberWidget. The most common group of users that can benefit from this guide are vendors and websites.
 
@@ -121,7 +124,7 @@ fileprivate var coordinator: KWCoordinator?
 
 ### Create KWCoordinator instance
 First, you need to create and initialize the `KWCoordinator` instance.
-There are 3 sub-classes `KWPayCoordinator`, `KWSwapCoordinator`, and `KWBuyCoordinator` corresponding to 3 use cases. You should only use these 3 classes depending on your purpose. You may find more information about the different use cases [here](references-kyberwidget.md).
+There are 3 sub-classes `KWPayCoordinator`, `KWSwapCoordinator`, and `KWBuyCoordinator` corresponding to 3 use cases. You should only use these 3 classes depending on your purpose. You may find more information about the different use cases [here](api_abi-kyberwidget.md#valid-use-cases).
 
 Please note that the values are **for illustration purposes** only.
 
@@ -186,7 +189,7 @@ Please ensure that your delegate class (`KWCoordinatorDelegate`) has implemented
 This function is called when the user cancels the action.
 
 #### 2. `coordinatorDidFailed(with error: KWError)`
-This function is called in the event of an error. Refer to [this section](references-kyberwidget.md#error-cases-to-be-handled) for the error / edge cases to be handled by the `coordinatorDidFailed()` function.
+This function is called in the event of an error. Refer to [this section](api_abi-kyberwidget.md#error-cases-to-be-handled) for the error / edge cases to be handled by the `coordinatorDidFailed()` function.
 
 #### 3. `coordinatorDidBroadcastTransaction(with txHash: String)`
 This function is called when the transaction has been broadcasted to the blockchain. Refer to [this page](https://github.com/KyberNetwork/KyberWidget/blob/master/README.md#how-to-get-payment-status) on checking and confirming the payment status.

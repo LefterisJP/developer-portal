@@ -2,6 +2,9 @@
 id: Reserves-AutomatedPriceReserve
 title: Automated Price Reserve
 ---
+## DISCLAIMER
+**All code snippets in this guide have not been audited and should not be used in production. If so, it is done at your own risk.**
+
 ## Objective
 
 In this guide, we will learn how to configure and deploy an Automated Price Reserve either locally via Ganache or to the Ropsten testnet.
@@ -194,7 +197,7 @@ Second, **r** is liquidity the rate in basis points or units of 100 which the pr
 
 For the **minimum/maximum supported price factor ratio**, it is recommended to start with a ratio of 0.5:2.0. This indicates that the inventory will suffice for up to 100% increase or 50% decrease in token price with respect to ETH.
 
-Setting the liquidity parameters is done by executing the [`setLiquidityParameters()`](references-liquidityconversionrates.md#setliquidityparams) function from the LiquidityConversionRates contract. We explain the different parameters below:
+Setting the liquidity parameters is done by executing the [`setLiquidityParameters()`](api_abi-liquidityconversionrates.md#setliquidityparams) function from the LiquidityConversionRates contract. We explain the different parameters below:
 
 | Type      | Parameter                     | Explanation |
 | :-------: | :---------------------------: | :---------: |

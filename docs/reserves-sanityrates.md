@@ -2,10 +2,13 @@
 id: Reserves-SanityRates
 title: Sanity Rates
 ---
+## DISCLAIMER
+**All code snippets in this document have not been audited and should not be used in production. If so, it is done at your own risk.**
+
 ## Sanity Rates
 ![Sanityrates](/uploads/sanityrates.png "Sanityrates")
 
-The sanity module protects reserves from (1) bugs in the conversion rate logic or from (2) hacks into the conversion rate system. If there are large inconsistencies between the sanity rates and the actual rates, then trades involving your reserve will be disabled. The functions below are from [`SanityRates.sol`](references-sanityrates.md).
+The sanity module protects reserves from (1) bugs in the conversion rate logic or from (2) hacks into the conversion rate system. If there are large inconsistencies between the sanity rates and the actual rates, then trades involving your reserve will be disabled. The functions below are from [`SanityRates.sol`](api_abi-sanityrates.md).
 
 * An admin sets `reasonableDiff` by calling `setReasonableDiff()`
 * An operator sets the `sanityRate` of a token by calling `setSanityRates()`
