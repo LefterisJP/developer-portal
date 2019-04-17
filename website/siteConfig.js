@@ -58,19 +58,18 @@ const users = [
 
 const siteConfig = {
   // Markdown Plugins
-  markdownPlugins: [
-    createVariableInjectionPlugin(siteVariables),
-  ],
+  markdownPlugins: [createVariableInjectionPlugin(siteVariables)],
 
   // Search bar
   algolia: {
     apiKey: 'da025d0828b58484a96005dfb00595a2',
-    indexName: 'kyber'
+    indexName: 'kyber',
   },
 
   // Base details
   title: 'KyberDeveloper · Powering Liquidity for the Ecosystem',
-  tagline: 'Platforms and applications of all sizes can tap into Kyber\'s decentralized liquidity network to power their liquidity needs, ranging from inter-token payments to portfolio rebalancing.',
+  tagline:
+    "Platforms and applications of all sizes can tap into Kyber's decentralized liquidity network to power their liquidity needs, ranging from inter-token payments to portfolio rebalancing.",
   url: 'https://developer.kyber.network',
   baseUrl: '/',
   projectName: 'kyberdeveloper',
@@ -89,7 +88,6 @@ const siteConfig = {
 
   // URL links on header
   headerLinks: [
-
     {
       doc: 'Start',
       label: 'Home',
@@ -113,7 +111,7 @@ const siteConfig = {
     {
       href: 'https://github.com/kybernetwork',
       label: 'GitHub',
-    }
+    },
   ],
 
   // Path to images for header/footer
@@ -130,7 +128,7 @@ const siteConfig = {
   // Remove html extension
   cleanUrl: true,
 
-  editUrl: 'http://ec2-54-254-161-180.ap-southeast-1.compute.amazonaws.com:1336/edit/',
+  // editUrl: 'http://ec2-54-254-161-180.ap-southeast-1.compute.amazonaws.com:1336/edit/',
 
   // Google Analytics tracking ID
   gaTrackingId: 'UA-99578428-4',
